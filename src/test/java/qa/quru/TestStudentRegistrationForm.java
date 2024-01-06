@@ -38,7 +38,7 @@ public class TestStudentRegistrationForm {
         $("#react-select-4-input").setValue("Delhi").sendKeys(Keys.ENTER);
         $("#submit").click();
 
-        // Проверка полей на соответствие заполненным значениямgi
+        // Проверка полей на соответствие заполненным значениям
         $(".modal-open").shouldBe(visible);
         $(".table").shouldHave(text("Ekaterina Zotova"));
         $(".table").shouldHave(text("zotova23@mail.ru"));
